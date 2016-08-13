@@ -1004,4 +1004,7 @@ config SND_I2S_PRIMARY
 source "sound/soc/codecs/sdm660_cdc/Kconfig"
 source "sound/soc/codecs/msm_sdw/Kconfig"
 
+config SOUND_CONTROL
+	bool "Sound control for wcd9335"
+
 endmenu
