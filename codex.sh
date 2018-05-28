@@ -39,9 +39,6 @@ white='\e[0;37m'        # White
 nocol='\033[0m'         # Default
 
 # Tweakable Stuff
-export ARCH=arm64
-export CROSS_COMPILE=/home/axel/aarch64-linux-android-4.9/bin/aarch64-linux-android-
-export SUBARCH=arm64
 export KBUILD_BUILD_USER="axel"
 export KBUILD_BUILD_HOST="codex-bot"
 
@@ -69,13 +66,16 @@ echo -e "$yellow***********************************************"
 echo "          Initialising DEFCONFIG        "
 echo -e "***********************************************$nocol"
 
-make O=out whyred-perf_defconfig
+make O=out ARCH=arm64 whyred-perf_defconfig
 
 echo -e "$yellow***********************************************"
 echo "          Cooking Codex!!        "
 echo -e "***********************************************$nocol"
 
-make O=out -j$(nproc --all)
+make -j$(nproc --all) O=out ARCH=arm64 \
+                      CC="/home/axel/clang-7.0/bin/clang" \
+                      CLANG_TRIPLE="aarch64-linux-gnu-" \
+                      CROSS_COMPILE="/home/axel/aarch64-linux-android-4.9/bin/aarch64-linux-android-"
 
 if ! [ -a $ZIMAGE ];
 then
