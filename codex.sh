@@ -41,7 +41,7 @@ nocol='\033[0m'         # Default
 # Tweakable Stuff
 export KBUILD_BUILD_USER="axel"
 export KBUILD_BUILD_HOST="codex-bot"
-
+export KBUILD_COMPILER_STRING=$(/home/axel/clang-7.0/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')
 
 #COMPILATION SCRIPTS
 echo -e "${green}"
