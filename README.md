@@ -33,4 +33,5 @@ Ah, everyone likes to experience new features. If you want me to add something n
 - **Shahan Mike** (For fixing DT2W on custom ROMs)
 - **Venkat**
 - **Vishal**
+- **#TeamWhyred** 
 - **Let me know if I forgot someone(or consider making a pull request)**
