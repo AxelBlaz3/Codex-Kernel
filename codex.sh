@@ -66,7 +66,7 @@ echo -e "$yellow***********************************************"
 echo "          Initialising DEFCONFIG        "
 echo -e "***********************************************$nocol"
 
-make O=out ARCH=arm64 whyred-perf_defconfig
+make O=out ARCH=arm64 codex_defconfig
 
 echo -e "$yellow***********************************************"
 echo "          Cooking Codex!!        "
