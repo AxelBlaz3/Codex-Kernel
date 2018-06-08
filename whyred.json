@@ -20,7 +20,7 @@
     "Adreno boost (Disabled by default)",
     "Wireguard VPN support",
     {
-	"name": "CPU Governors:",
+      "name": "CPU Governors:",
       "items": [
 	  "Alucard",
           "Blu_active"
@@ -38,4 +38,5 @@
     "name": "v1.0",
     "url": 
   }
+  ]	  
 }
