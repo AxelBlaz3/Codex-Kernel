@@ -18,25 +18,17 @@
     "CPU boost",
     "Switch for Fsync",
     "Adreno boost (Disabled by default)",
-    "Wireguard VPN support",
-    {
-      "name": "CPU Governors:",
-      "items": [
-	  "Alucard",
-          "Blu_active"
-     ]
-	}
-	{
-    "name": "I/O Schedulers:",
-    "items": [
-	  "Maple(default)"
-	  ]
-	}
+    "Wireguard VPN support"
   ],
-  "downloads": [
-  {
+  "CPU Governors": [
+    "Alucard",
+    "Blu_active"
+  ],
+  "I/O Schedulers": [
+    "Maple(default)"
+  ],
+  "downloads": {
     "name": "v1.0",
-    "url": 
+    "url": ""
   }
-  ]	  
 }
