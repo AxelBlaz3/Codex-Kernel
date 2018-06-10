@@ -33,7 +33,7 @@
   },
   "changelog": [
     {
-      "version": "1.0 (Initial release)",
+      "version": "<b>1.0 (Initial release)</b>",
       "added": [
         "A battery life that your device deserves without compromising performance",
         "Built with clang-7.0.2",
