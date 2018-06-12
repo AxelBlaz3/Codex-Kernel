@@ -18,25 +18,47 @@
     "CPU boost",
     "Switch for Fsync",
     "Adreno boost (Disabled by default)",
-    "Wireguard VPN support",
-    {
-      "name": "CPU Governors:",
-      "items": [
-	  "Alucard",
-          "Blu_active"
-     ]
-	}
-	{
-    "name": "I/O Schedulers:",
-    "items": [
-	  "Maple(default)"
-	  ]
-	}
+    "Wireguard VPN support"
   ],
-  "downloads": [
-  {
-    "name": "v1.0",
-    "url": 
-  }
-  ]	  
+  "CPU Governors": [
+    "Alucard",
+    "Blu_active"
+  ],
+  "I/O Schedulers": [
+    "Maple(default)"
+  ],
+  "downloads": {
+    "name": "CodeX-v1.1S",
+    "ver": "v1.1",
+    "url": "https://github.com/AxelBlaz3/Codex-Kernel/raw/gh-pages/Stable/Codex-v1.1S.zip"
+  },
+  "changelog": [
+    {
+      "version": "1.0 (Initial release)",
+      "added": [
+        "A battery life that your device deserves without compromising performance",
+        "Built with clang-7.0.2",
+        "Latest CAF upstream tag merged ( LA.UM.6.2.r2-03900-sdm660.0)",
+        "Latest linux-stable upstream (4.4.136)",
+        "Built on OOS source",
+        "DT2W support",
+        "Deep sleep fixed",
+        "Dirty Ratio tweaks",
+        "Adjust swappiness to 40",
+        "Better performance than ever",
+        "KCAL color control",
+        "Boeffla wake lock blocker",
+        "CPU wake boost driver",
+        "CPU boost",
+        "Switch for Fsync",
+        "Adreno boost (Disabled by default)",
+        "Wireguard VPN support",
+        "Alucard",
+        "Blu_active",
+        "Maple(default)",
+        "Alucard",
+        "Blu_active"
+      ]
+    }
+  ]
 }
