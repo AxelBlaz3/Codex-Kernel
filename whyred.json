@@ -53,11 +53,9 @@
         "Switch for Fsync",
         "Adreno boost (Disabled by default)",
         "Wireguard VPN support",
-        "Alucard",
-        "Blu_active",
+        "Alucard(Governor)",
+        "Blu_active(Governor)",
         "Maple(default)",
-        "Alucard",
-        "Blu_active"
       ]
     }
   ]
