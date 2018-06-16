@@ -34,8 +34,8 @@
   },
   "changelog": [
     {
-      "version": "1.0 (Initial release)",
       "added": [
+        "1.0 (Initial release)",
         "A battery life that your device deserves without compromising performance",
         "Built with clang-7.0.2",
         "Latest CAF upstream tag merged ( LA.UM.6.2.r2-03900-sdm660.0)",
