@@ -25,7 +25,7 @@ KERN_IMG=$KERNEL_DIR/out/arch/arm64/boot/Image.gz-dtb
 BASE_VER="Codex"
 VER="-v1-$(date +"%Y-%m-%d"-%H%M)-"
 BUILD_START=$(date +"%s")
-
+KERNEL_VER="v1.0S"
 
 # Color Code Script
 black='\e[0;30m'        # Black
@@ -76,6 +76,25 @@ make -j$(nproc --all) O=out ARCH=arm64 \
                       CC="/home/axel/clang-7.0/bin/clang" \
                       CLANG_TRIPLE="aarch64-linux-gnu-" \
                       CROSS_COMPILE="/home/axel/aarch64-linux-android-4.9/bin/aarch64-linux-android-"
+
+echo -e "$yellow***********************************************"
+echo "          Copying zImage        "
+echo -e "***********************************************$nocol"
+
+cp $KERNEL_IMG AnyKernel2/zImage
+
+echo -e "$yellow***********************************************"
+echo "          Copying modules        "
+echo -e "***********************************************$nocol"
+
+cp out/fs/exfat/exfat.ko AnyKernel2/modules/system/vendor/lib/modules/exfat.ko
+
+echo -e "$yellow***********************************************"
+echo "          Making Flashable Zip        "
+echo -e "***********************************************$nocol"
+
+cd AnyKernel2
+zip -r9 $BASE_VER-$KERNEL_VER.zip * -x README.md $BASE_VER-$KERNEL_VER.zip
 
 if ! [ -a $ZIMAGE ];
 then
