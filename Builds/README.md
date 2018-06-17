@@ -1,3 +1,3 @@
 ## CodeX Android Packages
 
-- This branch holds the experimental test related to updates(of APKs)
+- This branch holds the experimental tests related to updates(of APKs)
