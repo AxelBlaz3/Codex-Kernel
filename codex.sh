@@ -81,7 +81,7 @@ echo -e "$yellow***********************************************"
 echo "          Copying zImage        "
 echo -e "***********************************************$nocol"
 
-cp $KERNEL_IMG AnyKernel2/zImage
+cp out/arch/arm64/boot/Image.gz-dtb AnyKernel2/zImage
 
 echo -e "$yellow***********************************************"
 echo "          Copying modules        "
