@@ -27,11 +27,27 @@
     "Maple(default)"
   ],
   "downloads": {
-    "name": "CodeX-v1.01",
-    "ver": "v1.01",
-    "url": "https://github.com/AxelBlaz3/Codex-Kernel/raw/gh-pages/Stable/Codex-v1.01.zip"
+    "name": "CodeX-v1.1",
+    "ver": "v1.1",
+    "url": "https://github.com/AxelBlaz3/Codex-Kernel/raw/gh-pages/Stable/Codex-v1.1.zip"
   },
   "changelog": [
+    {
+      "added": [
+        "Version 1.1",
+        "Qnovo Charging Interface",
+        "Adreno Idler",
+        "Fingerprint boost driver",
+        "Switch for CRC",
+        "TTL fixation support",
+        "Set Westwood as default TCP",
+        "Backlight dimmer",
+        "SDFAT support",
+        "Added more wakelocks to block list",
+        "Few battery saving algorithms (Thanks to @sultanxda)",
+        "Many more patches under the hood!"
+      ]
+    },
     {
       "added": [
         "Version 1.01",
