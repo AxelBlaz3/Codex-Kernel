@@ -84,12 +84,6 @@ echo -e "***********************************************$nocol"
 cp out/arch/arm64/boot/Image.gz-dtb AnyKernel2/zImage
 
 echo -e "$yellow***********************************************"
-echo "          Copying modules        "
-echo -e "***********************************************$nocol"
-
-cp out/fs/exfat/exfat.ko AnyKernel2/modules/system/vendor/lib/modules/exfat.ko
-
-echo -e "$yellow***********************************************"
 echo "          Making Flashable Zip        "
 echo -e "***********************************************$nocol"
 
