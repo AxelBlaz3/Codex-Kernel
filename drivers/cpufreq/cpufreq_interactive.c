@@ -575,7 +575,7 @@ static void cpufreq_interactive_timer(unsigned long data)
 	}
 
 	new_freq = chosen_freq;
-	if (false && (jump_to_max_no_ts || jump_to_max)) {
+	if (jump_to_max_no_ts || jump_to_max) {
 		new_freq = ppol->policy->cpuinfo.max_freq;
 	} else if (!skip_hispeed_logic) {
 		if (pol_load >= tunables->go_hispeed_load ||
@@ -857,7 +857,7 @@ static int cpufreq_interactive_notifier(
 	int cpu;
 	unsigned long flags;
 
-	if (val == CPUFREQ_PRECHANGE) {
+	if (val == CPUFREQ_POSTCHANGE) {
 		ppol = per_cpu(polinfo, freq->cpu);
 		if (!ppol)
 			return 0;
@@ -1747,6 +1747,8 @@ static int cpufreq_governor_interactive(struct cpufreq_policy *policy,
 		mutex_lock(&gov_lock);
 
 		freq_table = cpufreq_frequency_get_table(policy->cpu);
+		if (!tunables->hispeed_freq)
+			tunables->hispeed_freq = policy->max;
 
 		ppol = per_cpu(polinfo, policy->cpu);
 		ppol->policy = policy;
