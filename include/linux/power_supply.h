@@ -395,23 +395,6 @@ struct power_supply {
 	size_t num_supplies;
 	struct device_node *of_node;
 
-         /*
-	 * Functions for drivers implementing power supply class.
-	 * These shouldn't be called directly by other drivers for accessing
-	 * this power supply. Instead use power_supply_*() functions (for
-	 * example power_supply_get_property()).
-	 */
-	int (*get_property)(struct power_supply *psy,
-			    enum power_supply_property psp,
-			    union power_supply_propval *val);
-	int (*set_property)(struct power_supply *psy,
-			    enum power_supply_property psp,
-			    const union power_supply_propval *val);
-	int (*property_is_writeable)(struct power_supply *psy,
-				     enum power_supply_property psp);
-	void (*external_power_changed)(struct power_supply *psy);
-        void (*set_charged)(struct power_supply *psy);
-
 	/* Driver private data */
 	void *drv_data;
 
