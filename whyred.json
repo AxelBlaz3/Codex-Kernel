@@ -27,14 +27,23 @@
     "Maple(default)"
   ],
   "downloads": {
-    "name": "CodeX-v1.1",
-    "ver": "v1.1",
-    "url": "https://github.com/AxelBlaz3/Codex-Kernel/raw/gh-pages/Stable/Codex-v1.1.zip"
+    "name": "CodeX-v1.2",
+    "ver": "v1.2",
+    "url": "https://github.com/AxelBlaz3/Codex-Kernel/raw/gh-pages/Stable/Codex-v1.2.zip"
   },
   "changelog": [
     {
       "added": [
-        "Version 1.1",
+        "Version 1.2 (July 1, 2018)",
+        "Remove Qnovo charging interface",
+        "Add Suspend driver for idle battery drain",
+        "Add NVS hibernation driver",
+        "Fixed battery drain (Which persists in the previous version of CodeX)"
+      ]
+    },
+    {
+      "added": [
+        "Version 1.1 (June 24, 2018)",
         "Qnovo Charging Interface",
         "Adreno Idler",
         "Fingerprint boost driver",
@@ -50,13 +59,13 @@
     },
     {
       "added": [
-        "Version 1.01",
+        "Version 1.01 (June 18, 2018)",
         "Fixed vibration intensity control"
       ]
     },
     {
       "added": [
-        "Version 1.0",
+        "Version 1.0 (June 17, 2018)",
         "More juice",
         "Built with clang-7.0.2",
         "Latest CAF upstream tag merged ( LA.UM.6.2.r2-03900-sdm660.0)",
