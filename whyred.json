@@ -2,20 +2,19 @@
   "name": "CodeX-Kernel",
   "description": "A battery friendly and performance optimized kernel. Cause your device deserves it!",
   "features": [
-    "A battery life that your device deserves without compromising performance",
+    "More Juice",
     "Built with clang-7.0.2",
     "Latest CAF upstream tag merged ( LA.UM.6.2.r2-03900-sdm660.0)",
-    "Latest linux-stable upstream (4.4.136)",
+    "Latest linux-stable upstream (4.4.138)",
     "Built on OOS source",
     "DT2W support",
     "Deep sleep fixed",
     "Dirty Ratio tweaks",
     "Adjust swappiness to 40",
-    "Better performance than ever",
+    "Better performance than stock",
     "KCAL color control",
     "Boeffla wake lock blocker",
     "CPU wake boost driver",
-    "CPU boost",
     "Switch for Fsync",
     "Adreno boost (Disabled by default)",
     "Wireguard VPN support"
@@ -28,34 +27,55 @@
     "Maple(default)"
   ],
   "downloads": {
-    "name": "CodeX-v1.1S",
-    "ver": "v1.0",
-    "url": "https://github.com/AxelBlaz3/Codex-Kernel/raw/gh-pages/Stable/Codex-v1.0S.zip"
+    "name": "CodeX-v1.1",
+    "ver": "v1.1",
+    "url": "https://github.com/AxelBlaz3/Codex-Kernel/raw/gh-pages/Stable/Codex-v1.1.zip"
   },
   "changelog": [
     {
       "added": [
-        "1.0 (Initial release)",
-        "A battery life that your device deserves without compromising performance",
+        "Version 1.1",
+        "Qnovo Charging Interface",
+        "Adreno Idler",
+        "Fingerprint boost driver",
+        "Switch for CRC",
+        "TTL fixation support",
+        "Set Westwood as default TCP",
+        "Backlight dimmer",
+        "SDFAT support",
+        "Added more wakelocks to block list",
+        "Few battery saving algorithms (Thanks to @sultanxda)",
+        "Many more patches under the hood!"
+      ]
+    },
+    {
+      "added": [
+        "Version 1.01",
+        "Fixed vibration intensity control"
+      ]
+    },
+    {
+      "added": [
+        "Version 1.0",
+        "More juice",
         "Built with clang-7.0.2",
         "Latest CAF upstream tag merged ( LA.UM.6.2.r2-03900-sdm660.0)",
-        "Latest linux-stable upstream (4.4.136)",
+        "Latest linux-stable upstream (4.4.138)",
         "Built on OOS source",
         "DT2W support",
         "Deep sleep fixed",
         "Dirty Ratio tweaks",
         "Adjust swappiness to 40",
-        "Better performance than ever",
+        "Better performance than stock",
         "KCAL color control",
         "Boeffla wake lock blocker",
         "CPU wake boost driver",
-        "CPU boost",
         "Switch for Fsync",
         "Adreno boost (Disabled by default)",
         "Wireguard VPN support",
         "Alucard(Governor)",
         "Blu_active(Governor)",
-        "Maple(default)",
+        "Maple(default)"
       ]
     }
   ]
